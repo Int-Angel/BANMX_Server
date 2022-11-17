@@ -14,12 +14,6 @@ app.use(bodyParser.json());
 
 app.use("/descargar", referralRoutes.routes);
 
-/*
-app.get("/descargar", (req, res) => {
-  console.log("id: " + req.query.id);
-});
-*/
-
 app.listen(config.port, () =>
   console.log("App is listening on url http://localhost:" + config.port)
 );
