@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use("/api", referralRoutes.routes);
+app.use("/descargar", referralRoutes.routes);
 
 /*
 app.get("/descargar", (req, res) => {

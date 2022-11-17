@@ -3,7 +3,7 @@ const { addOneToRefferral } = require("../controllers/ReferralController");
 
 const router = express.Router();
 
-router.put("/referral/:id", addOneToRefferral);
+router.get("/referral", addOneToRefferral);
 
 module.exports = {
   routes: router,
