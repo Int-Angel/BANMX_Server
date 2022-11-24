@@ -1,33 +1,36 @@
 # BANMX_Server
 
-Esta es la API para la app de [BANMX](https://github.com/RicardoGLeal/BanMX)
-Esta API actualmente solo se encarga del sistema de referidos, pero esta desarrollado de manera que es facil de escalar.
+Esta es la API para la app de [BANMX](https://github.com/RicardoGLeal/BanMX)<br />
+Esta API actualmente solo se encarga del sistema de referidos, pero esta desarrollado de manera que es facil de escalar.<br />
 
 ## Instalación
 
 ### .env
 
-Agrega un archivo .env con tus claves de Firebase:
+Agrega un archivo .env con tus claves de Firebase:<br />
 
-Express config
-PORT=PORT
-HOST=HOST
-HOST_URL=url
+**Express config**<br />
+PORT=PORT<br />
+HOST=HOST<br />
+HOST_URL=url<br />
 
-Firebase config
-API_KEY=KEY
-AUTH_DOMAIN=domain
-PROJECT_ID=id
-STORAGE_BUCKET=bucket
-MESSAGING_SENDER_ID=sender
-APP_ID=id
-MEASUREMENT_ID=id
+<br />
+
+**Firebase config**<br />
+API_KEY=KEY<br />
+AUTH_DOMAIN=domain<br />
+PROJECT_ID=id<br />
+STORAGE_BUCKET=bucket<br />
+MESSAGING_SENDER_ID=sender<br />
+APP_ID=id<br />
+MEASUREMENT_ID=id<br />
+<br />
 
 ### Correr servidor
 
-Clona este repositorio:
-$ npm install
-$ npm start
+Clona este repositorio:<br />
+$ npm install<br />
+$ npm start<br />
 
 ## Estructura del proyecto
 
@@ -37,11 +40,11 @@ Contiene las rutas generales de la API y utiliza routes para separar los endpoin
 
 ### db
 
-Contiene los modulos de firebase para usarlos facilmente en el proyecto
+Contiene los modulos de firebase para usarlos facilmente en el proyecto.
 
 ### config
 
-Contiene la configuracion de firebase y del servidor utilizando el archivo .env
+Contiene la configuracion de firebase y del servidor utilizando el archivo .env<br />
 
 Utilizamos routes, models y controllers para hacer nuestra API escalable.
 
@@ -55,17 +58,17 @@ Son metodos que ejecutan algo de codigo
 
 ### Modelos
 
-Modelos de la base de datos utilizados por los controllers
+Modelos de la base de datos utilizados por los controllers<br />
 
-En nuestro proyecto tenemos una ruta para referals que llama a un controlador con un endpoint que es el de referrals que utiliza un modelo para referrals.
+En nuestro proyecto tenemos una ruta para referals que llama a un controlador con un endpoint que es el de referrals que utiliza un modelo para referrals.<br />
 
 Esto nos permite escalar la API de manera rapida.
 
 ## Endpoints
 
-/descargar/referral/?id=
-Este endpoint actualiza el contador de referidos del usuario al que le pertenece el link y redirige al nuevo usario a la play store para descargar la app.
-Parametros:
+**/descargar/referral/?id=**<br />
+Este endpoint actualiza el contador de referidos del usuario al que le pertenece el link y redirige al nuevo usario a la play store para descargar la app.<br />
+Parametros:<br />
 
 - id: es el id del usuario al que le pertenece el link
 
