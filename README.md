@@ -73,6 +73,7 @@ Parametros:<br />
 - id: es el id del usuario al que le pertenece el link
 
 nota: deberia de redirigir a una pagina para descargar la app, pero actualemente la app no se encuentra en ningun lugar disponible.
+---
 
 ### MIT License
 
